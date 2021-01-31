@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lbltitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OPERACIONES BASICAS"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/txtnum1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbltitulo"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Escribe un numero" />
+
+    <EditText
+        android:id="@+id/txtnum2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtnum1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Escribe un numero" />
+
+    <RadioGroup
+        android:id="@+id/optOperacionesBasicas"
+        android:layout_width="130dp"
+        android:layout_height="449dp"
+        android:layout_below="@id/txtnum2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-6dp"
+        android:layout_marginBottom="10dp">
+
+        <RadioButton
+            android:id="@+id/optSuma"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:checked="true"
+            android:text="+" />
+
+        <RadioButton
+            android:id="@+id/optResta"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:text="-" />
+
+        <RadioButton
+            android:id="@+id/optMultiplicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:text="x" />
+
+        <RadioButton
+            android:id="@+id/optDivision"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:text="/" />
+
+        <RadioButton
+            android:id="@+id/optFactorial"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:text="!" />
+
+        <RadioButton
+            android:id="@+id/optPorcentaje"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:text="%" />
+
+        <RadioButton
+            android:id="@+id/optExponenciacion"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:text="^" />
+
+        <RadioButton
+            android:id="@+id/optRaiz"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="√" />
+
+        <RadioButton
+            android:id="@+id/optModulo"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Modulo" />
+
+        <RadioButton
+            android:id="@+id/optMayor2Numeros"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:text="Número mayor" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/lblRespuesta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/optOperacionesBasicas"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="-321dp"
+        android:layout_marginEnd="6dp"
+        android:text="Respuesta: ?"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblRespuesta"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="carcular"
+        android:text="Calcular" />
+
+</RelativeLayout>
+
